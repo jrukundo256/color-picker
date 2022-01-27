@@ -1,79 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Color Picker</title>
+    <title>Color Picker - Jonathan Rukundo</title>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spinnaker">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SourceSansPro">
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/colorPicker.js"></script>
-
-
-    <style>
-        .main {
-            border: 1px solid #000000; 
-            border-radius: 4px; 
-            padding: 10px 0px !important;
-            max-width: 968px;
-            max-height: 300px;
-            margin: 100px auto;
-            height: 700px;
-        }
-    </style>
-
-
+    <script src="js/colorPicker.js" defer></script>
 </head>
 
 <body>
-
-
-<div class="container main">
-
-    <!-- Header -->
-    <div class="home-header">
-        <span> Color Picker </span>
-        <span style="text-align: right"> Link to Github </span>
-    </div>
-    <!-- End Header -->
-
-    <!-- Main Area -->
-    <div class="container">
-        <div class="row main-home">
-
-            <!-- Color Display Box -->
-            <div class="col-md-5 col-sm-12 col-xs-12 tartan-mascot" style="background-color: yellow">
-                <p>Howdy</p>
-            </div>
-
-            <!-- Color Selection Area -->
-            <div class="col-md-7 col-sm-12 col-xs-12 join-form" style="background-color: blue"> 
-                <p>Jonathan Rukundo</p>
+    <div class="container main-container">
+        <!-- Header -->
+        <div class="header">
+            <div id="header-title"> Color picker </div>
+            <div id="github-icon">
+                <a href="https://github.com/jrukundo256/color-picker" target="_blank">
+                    <span class="fa fa-github"></span>
+                </a>
             </div>
         </div>
-    </div>
-    <!-- End Main Area -->
+        <!-- End Header -->
 
-    <!-- Footer -->
-    <div class="home-footer text-center">
-        <a href="#">
-            <h5> &#169; BUILT BY JONATHAN RUKUNDO </h5>
-        </a>
-    </div>
-    <!-- End Footer -->
+        <!-- Main Display Area -->
+        <div class="container main-area">
+            <div class ="row main-display">
+                <!-- Color Display Wrapper -->
+                <div class="display-wrapper col-md-5 col-sm-12 col-xs-12"></div>
+                
+                <!-- Color Picker Wrapper -->
+                <div class="picker-wrapper col-md-7 col-sm-12 col-xs-12 join-form">
+                    <div class="saturation-layer"></div>
+                    <div class="saturation-white"></div>
+                    <div class="saturation-black"></div>
+                </div>
+            </div>
 
+            <!-- Color Spectrun -->
+            <div class="row spectrum">
+              <div class="container spectrum-wrapper">
+                  <div class="spectrum-layer col-md-12 col-sm-12 col-xs-12"></div>
+              </div>
+          </div>
 
-</div>
+          <!-- Color Hex Values -->
+          <div class="row hex-display">
+              <div class="container hex-display-wrapper">
+                  <div>Color (HEX): <span class="hex">#30a8ff</span></div>
+              </div>
+          </div>
+      </div>
+      <!-- End Main Area -->
+  </div>
+
 </body>
-
 </html>
